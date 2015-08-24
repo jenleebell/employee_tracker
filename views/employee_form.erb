@@ -1,0 +1,11 @@
+<h1>Please add an employee to the division:</h1>
+
+<form action="/employees/<%= @division %>" method ="post">
+	<div class="form-group">
+		<label for="name">Please add the employee's name:</label>
+
+		<input for="name" name="name">
+	</div>
+	<button type="submit" class="btn btn-danger">Submit</button>
+
+</form>

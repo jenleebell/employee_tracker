@@ -1,0 +1,17 @@
+<h1>Your Current Divisions</h1>
+
+<%if @divisions.any? %>
+	<h3>Here are your divisions:</h3>
+
+	<ul>
+		<% @divisions.each do |division| %>
+		<li><a href="/divisions/<%= division.id() %>"><%= division.name() %></a></li>
+		<% end %>
+	</ul>
+
+<% else %>
+		<p>There are no divisions yet!</p>
+<% end %>
+
+<a href="/clear">Clear all divisions!</a>
+<a href="/">Go Away!</a>
