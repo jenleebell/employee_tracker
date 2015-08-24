@@ -1,0 +1,93 @@
+
+/***********************
+-------Global--------
+***********************/
+body{
+  padding-top: 170px;
+  height: 850px;
+  background: linear-gradient(#fff, transparent 90%),
+  linear-gradient(0deg, #fff, transparent),
+  #fff url('http://crossfitamplify.com/wp-content/uploads/2014/11/Men-at-Work.jpg') no-repeat center;
+  background-size: cover;
+  text-align:center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/***********************
+-------Animation--------
+***********************/
+#animator{
+  overflow:hidden;
+}
+a.left{
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count:infinite;
+}
+
+a.right{
+  animation-duration: 3s;
+  animation-name: slideinleft;
+  animation-iteration-count:infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideinleft {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+
+
+/***********************
+-------CoolStuff--------
+***********************/
+
+a{
+  color:red;
+}
+
+a:hover {
+  color:orange;
+
+}
+
+
+/* The element to apply the animation to */
+.whee {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    position:absolute;
+    left:45%;
+    top:80%;
+    border-radius:100%;
+}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}

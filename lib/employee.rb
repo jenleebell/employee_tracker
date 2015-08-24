@@ -1,8 +1,6 @@
 class Employee < ActiveRecord::Base
   belongs_to(:division)
-
-  # scope(:not_done, -> do
-  #   where({:done => false})
-  # end)
+  belongs_to :project
+  # has_and_belongs_to_many(:project)
 
 end
