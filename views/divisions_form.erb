@@ -1,10 +1,27 @@
-<h1>Please add a new division:</h1>
-
-<form action="/divisions" method="post">
-	<div class="form-group">
-		<label for="name">Please enter division name:</label>
-		<input id="name" name="name" type="test">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">Employee Tracker</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/divisions">Divisions</a></li>
+				<li><a href="/projects">Projects</a></li>
+			</ul>
+		</div>
 	</div>
+</nav>
 
-	<button type="submit" class="btn-success">Add Division</button>
-</form>
+<div class="container">
+	<div class="jumbotron">
+		<h2>Add new division</h2>
+		<form action="/divisions" method="post">
+			<div class="form-group">
+				<label for="name">Please enter division name:</label>
+				<input id="name" name="name" type="test" placeholder="i.e. Accounting">
+			</div>
+			<button type="submit" class="btn btn-success">Add Division</button>
+		</form>
+	</div>
+</div>

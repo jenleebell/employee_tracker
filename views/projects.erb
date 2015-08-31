@@ -1,16 +1,33 @@
-<h1>Your Current Projects</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">Employee Tracker</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/divisions">Divisions</a></li>
+				<li><a href="/projects">Projects</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
-<%if @projects.any? %>
-	<h3>Here are your projects:</h3>
-
-	<ul>
-		<% @projects.each do |project| %>
-		<li><a href="/projects/<%= project.id() %>"><%= project.project_name() %></a></li>
-		<% end %>
-	</ul>
-
-<% else %>
+<div class="container">
+	<div class="jumbotron">
+		<h2>Projects</h2>
+		<%if @projects.any? %>
+		<ul>
+			<% @projects.each do |project| %>
+			<li><a href="/projects/<%= project.id() %>"><%= project.project_name() %></a></li>
+			<% end %>
+		</ul>
+		<% else %>
 		<p>There are no projects yet!</p>
-<% end %>
-
-<a href="/">Go Away!</a>
+		<% end %>
+		<a href="/projects/new" class="btn btn-success">Add a project</a>
+		<br>
+		<br>
+		<a href="/clear" class="btn btn-danger">Clear all projects</a>
+	</div>
+</div>

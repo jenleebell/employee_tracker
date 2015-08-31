@@ -1,30 +1,6 @@
-/***********************
--------Global--------
-***********************/
-body{
-  padding-top: 170px;
-  height: 850px;
-  background: linear-gradient(#fff, transparent 90%),
-  linear-gradient(0deg, #fff, transparent),
-  #fff url('http://crossfitamplify.com/wp-content/uploads/2014/11/Men-at-Work.jpg') no-repeat center;
+.jumbotron {
+  position: relative;
+  background: #000 url("http://ams-fs.co.uk/wp-content/uploads/2013/07/office-background.png") center center;
   background-size: cover;
-  text-align:center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-
-/***********************
--------Colors----------
-***********************/
-
-a{
-  color:red;
-}
-
-a:hover {
-  color:orange;
-
+  overflow: hidden;
 }
